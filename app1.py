@@ -14,6 +14,15 @@ from dateutil import parser
 import zipfile
 import pickle
 
+st.sidebar.image('11697-removebg-preview.png', width=200)
+st.header("Grocery Sale Prediction Application")
+
+
+# Load your image
+image = Image.open("supermarket-4052658__340.jpg")
+
+# Display the image
+st.image(image, caption="Your Image Caption")
 
 # Load the pre-trained model and the Pickle file
 model_ex = pickle.load(open("model.pkl", "rb"))
