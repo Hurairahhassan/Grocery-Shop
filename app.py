@@ -14,6 +14,17 @@ from dateutil import parser
 import zipfile
 import pickle
 
+st.sidebar.image('11697-removebg-preview.png', width=200)
+st.header("Grocery Sale Prediction Application")
+
+
+# Load your image
+image = Image.open("supermarket-4052658__340.jpg")
+
+# Display the image
+st.image(image, caption="Your Image Caption")
+
+
 
 zip_file = zipfile.ZipFile('custamise.zip')
 csv_file_name = zip_file.namelist()[0]
